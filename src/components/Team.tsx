@@ -145,7 +145,8 @@ const clubLeads: TeamMember[] = [
       { name: 'Analytics', level: 85 }
     ],
     social: {
-      linkedin: '#'
+      linkedin: 'https://www.linkedin.com/in/mohammed-ayaan-066a2426a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
+    }
     }
   },
   {
