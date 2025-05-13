@@ -12,8 +12,8 @@ interface NavItem {
 const navItems: NavItem[] = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Team', href: '/team' },
   { label: 'Mentors', href: '/mentors' },
+  { label: 'Team', href: '/team' },
   { label: 'Events', href: '/events' },
   { label: 'Contact', href: '/contact' }
 ];
@@ -179,3 +179,10 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+
+ 
+  
+     
+            
+            
+
