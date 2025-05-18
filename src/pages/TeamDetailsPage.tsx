@@ -4,17 +4,12 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ParticleBackground from '@/components/ParticleBackground';
 
-// Function to get public image path
-const getPublicImagePath = (imageName: string): string => {
-  return `/images/team/${imageName}`;
-};
-
 interface TeamMember {
   id: number;
   name: string;
   role: string;
-  image?: string;
   skills: string[];
+  image?: string;
   social: {
     github?: string;
     linkedin?: string;
@@ -28,8 +23,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 1, 
       name: 'Chinmayi P', 
       role: 'Organizer Team Lead', 
-      image: getPublicImagePath('chinmayi.jpg'),
       skills: ['Leadership', 'Event Planning', 'Team Management'],
+      image: '/chinmayi.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/chinmayi-p'
       }
@@ -38,8 +33,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 2, 
       name: 'Keerthana R', 
       role: 'Organizer', 
-      image: getPublicImagePath('keerthana.jpg'),
       skills: ['Event Coordination', 'Communication'],
+      image: '/keerthana.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/keerthana-r'
       }
@@ -48,8 +43,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 3, 
       name: 'Lipika BV', 
       role: 'Organizer', 
-      image: getPublicImagePath('lipika.jpg'),
       skills: ['Event Management', 'Team Coordination'],
+      image: '/lipika.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/lipika-bv'
       }
@@ -58,8 +53,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 4, 
       name: 'Poorna Prajay', 
       role: 'Organizer', 
-      image: getPublicImagePath('poorna.jpg'),
       skills: ['Event Planning', 'Logistics'],
+      image: '/poorna.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/poorna-prajay'
       }
@@ -68,8 +63,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 5, 
       name: 'Sudhindra Shenoy', 
       role: 'Organizer', 
-      image: getPublicImagePath('sudhindra.jpg'),
       skills: ['Event Coordination', 'Team Management'],
+      image: '/sudhindra.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/sudhindra-shenoy'
       }
@@ -78,8 +73,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 6, 
       name: 'Sameeksha', 
       role: 'Organizer', 
-      image: getPublicImagePath('sameeksha.jpg'),
       skills: ['Event Planning', 'Communication'],
+      image: '/sameeksha.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/sameeksha'
       }
@@ -90,8 +85,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 1, 
       name: 'Kushi J Ramu', 
       role: 'Graphics Design Lead', 
-      image: getPublicImagePath('kushi.jpg'),
       skills: ['Graphic Design', 'Visual Communication', 'Branding'],
+      image: '/kushi.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/kushi-j-ramu'
       }
@@ -100,8 +95,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 2, 
       name: 'Sanjana R', 
       role: 'Graphics Designer', 
-      image: getPublicImagePath('sanjana.jpg'),
       skills: ['Digital Design', 'Illustration'],
+      image: '/sanjana.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/sanjana-r'
       }
@@ -110,8 +105,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 3, 
       name: 'Keerthana K', 
       role: 'Graphics Designer', 
-      image: getPublicImagePath('keerthana-k.jpg'),
       skills: ['UI/UX Design', 'Visual Design'],
+      image: '/keerthana-k.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/keerthana-k'
       }
@@ -120,8 +115,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 4, 
       name: 'Shreya M S', 
       role: 'Graphics Designer', 
-      image: getPublicImagePath('shreya.jpg'),
       skills: ['Graphic Design', 'Digital Art'],
+      image: '/shreya.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/shreya-m-s'
       }
@@ -130,8 +125,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 5, 
       name: 'Shashank', 
       role: 'Graphics Designer', 
-      image: getPublicImagePath('shashank.jpg'),
       skills: ['Visual Design', 'Branding'],
+      image: '/shashank.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/shashank'
       }
@@ -140,8 +135,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 6, 
       name: 'Yashaa K N', 
       role: 'Graphics Designer', 
-      image: getPublicImagePath('yashaa.jpg'),
       skills: ['Digital Design', 'Illustration'],
+      image: '/yashaa.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/yashaa-k-n'
       }
@@ -151,9 +146,9 @@ const teamMembers: Record<string, TeamMember[]> = {
     { 
       id: 1, 
       name: 'Harsha g', 
-      role: 'Technical Lead', 
-      image: getPublicImagePath('harsha.jpg'),
+      role: 'Technical Developer', 
       skills: ['Software Development', 'Team Leadership', 'Architecture'],
+      image: '/harsha.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/harsha-g'
       }
@@ -162,8 +157,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 2, 
       name: 'Saurabh kumar', 
       role: 'Technical Developer', 
-      image: getPublicImagePath('saurabh.jpg'),
       skills: ['Web Development', 'Backend Development'],
+      image: '/saurabh.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/saurabh-kumar'
       }
@@ -172,31 +167,40 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 4, 
       name: 'MOHIT', 
       role: 'Technical Developer', 
-      image: getPublicImagePath('mohit.jpg'),
       skills: ['Software Development', 'Database Management'],
+      image: '/mohit.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/mohit'
       }
     },
+    {
+      id: 5,
+      name: 'Jiya Kavadiya',
+      role: 'Technical Developer',
+      skills: ['Development', 'Technical Leadership', 'Problem Solving'],
+      image: '/jiya.jpg',
+      social: {
+        linkedin: '#'
+      }
+    },
     { 
-      id: 5, 
+      id: 6, 
       name: 'Shruti Kumari', 
       role: 'Technical Developer', 
-      image: getPublicImagePath('shruti Kumari.jpg'),
       skills: ['Web Development', 'UI/UX'],
+      image: '/Shruti.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/shruti-kumari'
       }
-    },
-    
+    }
   ],
   'outreach-team-lead': [
     { 
       id: 1, 
       name: 'Rashmi Singh', 
       role: 'Outreach Lead', 
-      image: getPublicImagePath('rashmi.jpg'),
       skills: ['Community Engagement', 'Partnership Development'],
+      image: '/rashmi.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/rashmi-singh'
       }
@@ -205,8 +209,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 2, 
       name: 'Anusha CM', 
       role: 'Outreach Coordinator', 
-      image: getPublicImagePath('anusha.jpg'),
       skills: ['Community Relations', 'Event Planning'],
+      image: '/anusha.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/anusha-cm'
       }
@@ -215,8 +219,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 3, 
       name: 'Arbaz khan', 
       role: 'Outreach Coordinator', 
-      image: getPublicImagePath('arbaz.jpg'),
       skills: ['Partnership Development', 'Communication'],
+      image: '/arbaz.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/arbaz-khan'
       }
@@ -225,8 +229,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 4, 
       name: 'Maytri nagashree', 
       role: 'Outreach Coordinator', 
-      image: getPublicImagePath('maytri.jpg'),
       skills: ['Community Engagement', 'Event Coordination'],
+      image: '/maytri.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/maytri-nagashree'
       }
@@ -235,8 +239,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 5, 
       name: 'Bhavana', 
       role: 'Outreach Coordinator', 
-      image: getPublicImagePath('bhavana.jpg'),
       skills: ['Community Relations', 'Partnership Building'],
+      image: '/bhavana.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/bhavana'
       }
@@ -245,8 +249,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 6, 
       name: 'Yashashwini', 
       role: 'Outreach Coordinator', 
-      image: getPublicImagePath('yashashwini.jpg'),
       skills: ['Community Engagement', 'Event Planning'],
+      image: '/yashashwini.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/yashashwini'
       }
@@ -257,8 +261,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 1, 
       name: 'Spandana N', 
       role: 'Social Media Marketing Lead', 
-      image: getPublicImagePath('spandana.jpg'),
       skills: ['Social Media Strategy', 'Content Creation', 'Digital Marketing'],
+      image: '/spandana.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/spandana-n'
       }
@@ -267,8 +271,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 2, 
       name: 'Hitaishi', 
       role: 'Social Media Manager', 
-      image: getPublicImagePath('hitaishi.jpg'),
       skills: ['Content Strategy', 'Social Media Management'],
+      image: '/hitaishi.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/hitaishi'
       }
@@ -277,8 +281,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 3, 
       name: 'Apoorva C', 
       role: 'Social Media Manager', 
-      image: getPublicImagePath('apoorva.jpg'),
       skills: ['Digital Marketing', 'Content Creation'],
+      image: '/apoorva.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/apoorva-c'
       }
@@ -287,8 +291,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 4, 
       name: 'Vaibhav Ghogale', 
       role: 'Social Media Manager', 
-      image: getPublicImagePath('vaibhav.jpg'),
       skills: ['Social Media Strategy', 'Analytics'],
+      image: '/vaibhav.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/vaibhav-ghogale'
       }
@@ -297,8 +301,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 5, 
       name: 'Prakruthi', 
       role: 'Social Media Manager', 
-      image: getPublicImagePath('prakruthi.jpg'),
       skills: ['Content Creation', 'Community Management'],
+      image: '/prakruthi.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/prakruthi'
       }
@@ -307,8 +311,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       id: 6, 
       name: 'Chanchal', 
       role: 'Social Media Manager', 
-      image: getPublicImagePath('chanchal.jpg'),
       skills: ['Social Media Marketing', 'Content Strategy'],
+      image: '/chanchal.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/chanchal'
       }
@@ -319,6 +323,7 @@ const teamMembers: Record<string, TeamMember[]> = {
 const TeamDetailsPage: React.FC = () => {
   const { teamId } = useParams<{ teamId: string }>();
   const members = teamId ? teamMembers[teamId] : [];
+
   const teamName = teamId
     ?.split('-')
     .filter(word => word !== 'lead')
@@ -371,19 +376,19 @@ const TeamDetailsPage: React.FC = () => {
               className="bg-gradient-to-br from-black/50 to-black/30 backdrop-blur-xl rounded-xl p-6 border border-white/10"
             >
               <div className="flex items-center space-x-4 mb-4">
-                {member.image ? (
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-16 h-16 rounded-full object-cover"
-                  />
-                ) : (
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-dot-cyan/20 to-dot/20 flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full overflow-hidden bg-gradient-to-br from-dot-cyan/20 to-dot/20 flex items-center justify-center">
+                  {member.image ? (
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
                     <span className="text-2xl text-foreground/50">
                       {member.name.charAt(0)}
                     </span>
-                  </div>
-                )}
+                  )}
+                </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground">{member.name}</h3>
                   <p className="text-foreground/70">{member.role}</p>
