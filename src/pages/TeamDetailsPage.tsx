@@ -4,6 +4,11 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ParticleBackground from '@/components/ParticleBackground';
 
+// Function to get public image path
+const getPublicImagePath = (imageName: string): string => {
+  return `/images/team/${imageName}`;
+};
+
 interface TeamMember {
   id: number;
   name: string;
@@ -19,98 +24,293 @@ interface TeamMember {
 // Sample team members data - you should replace this with your actual data
 const teamMembers: Record<string, TeamMember[]> = {
   'organizer-team-lead': [
-    { id: 1, name: 'Chinmayi P', role: '', skills: [], social: {} },
-    { id: 2, name: 'Keerthana R', role: '', skills: [], social: {} },
-    { id: 3, name: 'Lipika BV', role: '', skills: [], social: {} },
-    { id: 4, name: 'Poorna Prajay', role: '', skills: [], social: {} },
-    { id: 5, name: 'Sudhindra Shenoy', role: '', skills: [], social: {} },
-    { id: 6, name: 'Sameeksha', role: '', skills: [], social: {} }
+    { 
+      id: 1, 
+      name: 'Chinmayi P', 
+      role: 'Organizer Team Lead', 
+      image: getPublicImagePath('chinmayi.jpg'),
+      skills: ['Leadership', 'Event Planning', 'Team Management'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/chinmayi-p'
+      }
+    },
+    { 
+      id: 2, 
+      name: 'Keerthana R', 
+      role: 'Organizer', 
+      image: getPublicImagePath('keerthana.jpg'),
+      skills: ['Event Coordination', 'Communication'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/keerthana-r'
+      }
+    },
+    { 
+      id: 3, 
+      name: 'Lipika BV', 
+      role: 'Organizer', 
+      image: getPublicImagePath('lipika.jpg'),
+      skills: ['Event Management', 'Team Coordination'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/lipika-bv'
+      }
+    },
+    { 
+      id: 4, 
+      name: 'Poorna Prajay', 
+      role: 'Organizer', 
+      image: getPublicImagePath('poorna.jpg'),
+      skills: ['Event Planning', 'Logistics'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/poorna-prajay'
+      }
+    },
+    { 
+      id: 5, 
+      name: 'Sudhindra Shenoy', 
+      role: 'Organizer', 
+      image: getPublicImagePath('sudhindra.jpg'),
+      skills: ['Event Coordination', 'Team Management'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/sudhindra-shenoy'
+      }
+    },
+    { 
+      id: 6, 
+      name: 'Sameeksha', 
+      role: 'Organizer', 
+      image: getPublicImagePath('sameeksha.jpg'),
+      skills: ['Event Planning', 'Communication'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/sameeksha'
+      }
+    }
   ],
   'graphics-design-team-lead': [
-    { id: 1, name: 'Kushi J Ramu', role: '', skills: [], social: {} },
-    { id: 2, name: 'Sanjana R', role: '', skills: [], social: {} },
-    { id: 3, name: 'Keerthana K', role: '', skills: [], social: {} },
-    { id: 4, name: 'Shreya M S', role: '', skills: [], social: {} },
-    { id: 5, name: 'Shashank', role: '', skills: [], social: {} },
-    { id: 6, name: 'Yashaa K N', role: '', skills: [], social: {} }
+    { 
+      id: 1, 
+      name: 'Kushi J Ramu', 
+      role: 'Graphics Design Lead', 
+      image: getPublicImagePath('kushi.jpg'),
+      skills: ['Graphic Design', 'Visual Communication', 'Branding'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/kushi-j-ramu'
+      }
+    },
+    { 
+      id: 2, 
+      name: 'Sanjana R', 
+      role: 'Graphics Designer', 
+      image: getPublicImagePath('sanjana.jpg'),
+      skills: ['Digital Design', 'Illustration'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/sanjana-r'
+      }
+    },
+    { 
+      id: 3, 
+      name: 'Keerthana K', 
+      role: 'Graphics Designer', 
+      image: getPublicImagePath('keerthana-k.jpg'),
+      skills: ['UI/UX Design', 'Visual Design'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/keerthana-k'
+      }
+    },
+    { 
+      id: 4, 
+      name: 'Shreya M S', 
+      role: 'Graphics Designer', 
+      image: getPublicImagePath('shreya.jpg'),
+      skills: ['Graphic Design', 'Digital Art'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/shreya-m-s'
+      }
+    },
+    { 
+      id: 5, 
+      name: 'Shashank', 
+      role: 'Graphics Designer', 
+      image: getPublicImagePath('shashank.jpg'),
+      skills: ['Visual Design', 'Branding'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/shashank'
+      }
+    },
+    { 
+      id: 6, 
+      name: 'Yashaa K N', 
+      role: 'Graphics Designer', 
+      image: getPublicImagePath('yashaa.jpg'),
+      skills: ['Digital Design', 'Illustration'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/yashaa-k-n'
+      }
+    }
   ],
   'technical-team-lead': [
-    { id: 1, name: 'Harsha g', role: '', skills: [], social: {} },
-    { id: 2, name: 'Saurabh kumar', role: '', skills: [], social: {} },
-    { id: 3, name: 'Abhilash kr', role: '', skills: [], social: {} },
-    { id: 4, name: 'MOHIT', role: '', skills: [], social: {} },
-    { id: 5, name: 'Shruti Kumari', role: '', skills: [], social: {} },
-    { id: 6, name: 'Prajwal MR', role: '', skills: [], social: {} }
+    { 
+      id: 1, 
+      name: 'Harsha g', 
+      role: 'Technical Lead', 
+      image: getPublicImagePath('harsha.jpg'),
+      skills: ['Software Development', 'Team Leadership', 'Architecture'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/harsha-g'
+      }
+    },
+    { 
+      id: 2, 
+      name: 'Saurabh kumar', 
+      role: 'Technical Developer', 
+      image: getPublicImagePath('saurabh.jpg'),
+      skills: ['Web Development', 'Backend Development'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/saurabh-kumar'
+      }
+    },
+    { 
+      id: 4, 
+      name: 'MOHIT', 
+      role: 'Technical Developer', 
+      image: getPublicImagePath('mohit.jpg'),
+      skills: ['Software Development', 'Database Management'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/mohit'
+      }
+    },
+    { 
+      id: 5, 
+      name: 'Shruti Kumari', 
+      role: 'Technical Developer', 
+      image: getPublicImagePath('shruti Kumari.jpg'),
+      skills: ['Web Development', 'UI/UX'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/shruti-kumari'
+      }
+    },
+    
   ],
   'outreach-team-lead': [
-    { id: 1, name: 'Rashmi Singh', role: '', skills: [], social: {} },
-    { id: 2, name: 'Anusha CM', role: '', skills: [], social: {} },
-    { id: 3, name: 'Arbaz khan', role: '', skills: [], social: {} },
-    { id: 4, name: 'Maytri nagashree', role: '', skills: [], social: {} },
-    { id: 5, name: 'Bhavana', role: '', skills: [], social: {} },
-    { id: 6, name: 'Yashashwini', role: '', skills: [], social: {} }
+    { 
+      id: 1, 
+      name: 'Rashmi Singh', 
+      role: 'Outreach Lead', 
+      image: getPublicImagePath('rashmi.jpg'),
+      skills: ['Community Engagement', 'Partnership Development'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/rashmi-singh'
+      }
+    },
+    { 
+      id: 2, 
+      name: 'Anusha CM', 
+      role: 'Outreach Coordinator', 
+      image: getPublicImagePath('anusha.jpg'),
+      skills: ['Community Relations', 'Event Planning'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/anusha-cm'
+      }
+    },
+    { 
+      id: 3, 
+      name: 'Arbaz khan', 
+      role: 'Outreach Coordinator', 
+      image: getPublicImagePath('arbaz.jpg'),
+      skills: ['Partnership Development', 'Communication'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/arbaz-khan'
+      }
+    },
+    { 
+      id: 4, 
+      name: 'Maytri nagashree', 
+      role: 'Outreach Coordinator', 
+      image: getPublicImagePath('maytri.jpg'),
+      skills: ['Community Engagement', 'Event Coordination'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/maytri-nagashree'
+      }
+    },
+    { 
+      id: 5, 
+      name: 'Bhavana', 
+      role: 'Outreach Coordinator', 
+      image: getPublicImagePath('bhavana.jpg'),
+      skills: ['Community Relations', 'Partnership Building'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/bhavana'
+      }
+    },
+    { 
+      id: 6, 
+      name: 'Yashashwini', 
+      role: 'Outreach Coordinator', 
+      image: getPublicImagePath('yashashwini.jpg'),
+      skills: ['Community Engagement', 'Event Planning'],
+      social: {
+        linkedin: 'https://www.linkedin.com/in/yashashwini'
+      }
+    }
   ],
   'social-media-marketing-lead': [
-    { id: 1, name: 'Spandana N', role: '', skills: [], social: {} },
-    { id: 2, name: 'Hitaishi', role: '', skills: [], social: {} },
-    { id: 3, name: 'Apoorva C', role: '', skills: [], social: {} },
-    { id: 4, name: 'Vaibhav Ghogale', role: '', skills: [], social: {} },
-    { id: 5, name: 'Prakruthi', role: '', skills: [], social: {} },
-    { id: 6, name: 'Chanchal', role: '', skills: [], social: {} }
-  ],
-  'treasurer': [
-    {
-      id: 1,
-      name: 'Chris Lee',
-      role: 'Financial Analyst',
-      skills: ['Budgeting', 'Financial Planning', 'Record Keeping'],
+    { 
+      id: 1, 
+      name: 'Spandana N', 
+      role: 'Social Media Marketing Lead', 
+      image: getPublicImagePath('spandana.jpg'),
+      skills: ['Social Media Strategy', 'Content Creation', 'Digital Marketing'],
       social: {
-        linkedin: '#'
+        linkedin: 'https://www.linkedin.com/in/spandana-n'
       }
     },
-    {
-      id: 2,
-      name: 'Amanda Chen',
-      role: 'Budget Coordinator',
-      skills: ['Budget Management', 'Expense Tracking', 'Financial Analysis'],
+    { 
+      id: 2, 
+      name: 'Hitaishi', 
+      role: 'Social Media Manager', 
+      image: getPublicImagePath('hitaishi.jpg'),
+      skills: ['Content Strategy', 'Social Media Management'],
       social: {
-        linkedin: '#'
+        linkedin: 'https://www.linkedin.com/in/hitaishi'
       }
     },
-    {
-      id: 3,
-      name: 'Robert Kim',
-      role: 'Account Manager',
-      skills: ['Account Reconciliation', 'Financial Reporting', 'Compliance'],
+    { 
+      id: 3, 
+      name: 'Apoorva C', 
+      role: 'Social Media Manager', 
+      image: getPublicImagePath('apoorva.jpg'),
+      skills: ['Digital Marketing', 'Content Creation'],
       social: {
-        linkedin: '#'
+        linkedin: 'https://www.linkedin.com/in/apoorva-c'
       }
     },
-    {
-      id: 4,
-      name: 'Jessica Wong',
-      role: 'Financial Operations',
-      skills: ['Operations Management', 'Process Improvement', 'Risk Management'],
+    { 
+      id: 4, 
+      name: 'Vaibhav Ghogale', 
+      role: 'Social Media Manager', 
+      image: getPublicImagePath('vaibhav.jpg'),
+      skills: ['Social Media Strategy', 'Analytics'],
       social: {
-        linkedin: '#'
+        linkedin: 'https://www.linkedin.com/in/vaibhav-ghogale'
       }
     },
-    {
-      id: 5,
-      name: 'Mark Thompson',
-      role: 'Fundraising Coordinator',
-      skills: ['Fundraising', 'Donor Relations', 'Grant Writing'],
+    { 
+      id: 5, 
+      name: 'Prakruthi', 
+      role: 'Social Media Manager', 
+      image: getPublicImagePath('prakruthi.jpg'),
+      skills: ['Content Creation', 'Community Management'],
       social: {
-        linkedin: '#'
+        linkedin: 'https://www.linkedin.com/in/prakruthi'
       }
     },
-    {
-      id: 6,
-      name: 'Laura Garcia',
-      role: 'Financial Secretary',
-      skills: ['Documentation', 'Data Entry', 'Administrative Support'],
+    { 
+      id: 6, 
+      name: 'Chanchal', 
+      role: 'Social Media Manager', 
+      image: getPublicImagePath('chanchal.jpg'),
+      skills: ['Social Media Marketing', 'Content Strategy'],
       social: {
-        linkedin: '#'
+        linkedin: 'https://www.linkedin.com/in/chanchal'
       }
     }
   ]
