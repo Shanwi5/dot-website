@@ -232,8 +232,8 @@ const teamMembers: Record<string, TeamMember[]> = {
       skills: ['Community Engagement', 'Event Coordination'],
       image: '/maytri.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/mythri-nagashree-5277b432a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-'
+        linkedin:'https://www.linkedin.com/in/mythri-nagashree-5277b432a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+
       }
     },
     { 
