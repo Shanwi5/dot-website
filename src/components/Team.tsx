@@ -70,6 +70,22 @@ const clubHeads: TeamMember[] = [
       github: 'https://github.com/07raghavan',
     },
   },
+  {
+    id: 9,
+    name: 'Sanitha BM',
+    role: 'Teasurer',
+    bio: 'Leading and managing team operations.',
+    image: '/shanitha.jpg',
+    skills: [
+      { name: 'Leadership', level: 92 },
+      { name: 'Team Management', level: 90 },
+      { name: 'Strategic Planning', level: 88 }
+    ],
+    social: {
+      linkedin: 'https://www.linkedin.com/in/sanitha-b-m-5658b130a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+    }
+  },
+  
 ];
 
 
@@ -148,21 +164,6 @@ const clubLeads: TeamMember[] = [
     ],
     social: {
       linkedin: 'https://www.linkedin.com/in/mohammed-ayaan-066a2426a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
-    }
-  },
-  {
-    id: 9,
-    name: 'Sanitha BM',
-    role: 'Team Head',
-    bio: 'Leading and managing team operations.',
-    image: '/shanitha.jpg',
-    skills: [
-      { name: 'Leadership', level: 92 },
-      { name: 'Team Management', level: 90 },
-      { name: 'Strategic Planning', level: 88 }
-    ],
-    social: {
-      linkedin: 'https://www.linkedin.com/feed/'
     }
   }
 ];
