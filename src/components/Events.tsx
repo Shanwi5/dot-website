@@ -1,5 +1,5 @@
-import React from 'react';
-import { Calendar, Clock, MapPin } from 'lucide-react';
+import React, { useState } from 'react';
+import { Calendar, Clock, MapPin, X } from 'lucide-react';
 
 interface Event {
   id: number;
@@ -13,6 +13,8 @@ interface Event {
 }
 
 const Events: React.FC = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   // Sample data - replace with actual data from your backend
   const upcomingEvents: Event[] = [
     {
@@ -42,11 +44,11 @@ const Events: React.FC = () => {
       date: "December 16, 2024",
       time: "9:00 AM - 4:30 PM",
       location: "MBA Smart Room",
-      image: "/images/events/tech-day-1.jpg",
+      image: "/tech1.jpeg",
       images: [
-        "/images/events/tech1.jpg",
-        "/images/events/tech2.jpg",
-        "/images/events/tech3.jpg"
+        "/tech4.jpeg",
+        "/tech2.jpeg",
+        "/tech3.jpeg"
       ],
       description: "Tech Day featured dynamic sessions on idea pitching and logo design, fostering creativity and innovation among participants."
     },
@@ -54,7 +56,7 @@ const Events: React.FC = () => {
 
   const EventCard: React.FC<{ event: Event }> = ({ event }) => (
     <div className="glass rounded-xl overflow-hidden animate-fade-in">
-      <div className="relative h-48">
+      <div className="relative h-48 cursor-pointer" onClick={() => setSelectedImage(event.image)}>
         <img
           src={event.image}
           alt={event.title}
@@ -65,7 +67,11 @@ const Events: React.FC = () => {
       {event.images && event.images.length > 0 && (
         <div className="grid grid-cols-3 gap-2 p-2 bg-black/20">
           {event.images.map((img, index) => (
-            <div key={index} className="relative h-24">
+            <div 
+              key={index} 
+              className="relative h-24 cursor-pointer" 
+              onClick={() => setSelectedImage(img)}
+            >
               <img
                 src={img}
                 alt={`${event.title} - Image ${index + 2}`}
@@ -103,16 +109,43 @@ const Events: React.FC = () => {
         <div className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              <span className="text-gradient">Upcoming Events</span>
+              <span className="text-gradient">Upcoming Event</span>
             </h2>
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
-              Join us for exciting workshops, seminars, and networking events
+              Join us for our next exciting workshop
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {upcomingEvents.map((event) => (
-              <EventCard key={event.id} event={event} />
+          <div className="max-w-4xl mx-auto">
+            {upcomingEvents.slice(0, 1).map((event) => (
+              <div key={event.id} className="glass rounded-xl overflow-hidden animate-fade-in">
+                <div className="relative h-96 cursor-pointer" onClick={() => setSelectedImage(event.image)}>
+                  <img
+                    src={event.image}
+                    alt={event.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                </div>
+                <div className="p-8">
+                  <h3 className="text-3xl font-bold mb-4">{event.title}</h3>
+                  <p className="text-white/70 text-lg mb-6">{event.description}</p>
+                  <div className="space-y-3">
+                    <div className="flex items-center text-lg text-white/80">
+                      <Calendar className="w-5 h-5 mr-3 text-dot-cyan" />
+                      {event.date}
+                    </div>
+                    <div className="flex items-center text-lg text-white/80">
+                      <Clock className="w-5 h-5 mr-3 text-dot-cyan" />
+                      {event.time}
+                    </div>
+                    <div className="flex items-center text-lg text-white/80">
+                      <MapPin className="w-5 h-5 mr-3 text-dot-cyan" />
+                      {event.location}
+                    </div>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
@@ -135,6 +168,26 @@ const Events: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button 
+            className="absolute top-4 right-4 text-white hover:text-dot-cyan transition-colors"
+            onClick={() => setSelectedImage(null)}
+          >
+            <X className="w-8 h-8" />
+          </button>
+          <img 
+            src={selectedImage} 
+            alt="Selected event image" 
+            className="max-h-[90vh] max-w-[90vw] object-contain"
+          />
+        </div>
+      )}
 
       {/* Background element */}
       <div className="absolute bottom-0 left-0 w-full max-w-4xl h-full max-h-96 bg-gradient-to-t from-dot/20 to-dot-cyan/10 rounded-full blur-3xl opacity-30 -z-10"></div>
