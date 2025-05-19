@@ -109,44 +109,11 @@ const Events: React.FC = () => {
         <div className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              <span className="text-gradient">Upcoming Event</span>
+              <span className="text-gradient">Upcoming Events</span>
             </h2>
-            <p className="text-lg text-white/70 max-w-2xl mx-auto">
-              Join us for our next exciting workshop
+            <p className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gradient max-w-2xl mx-auto">
+              Coming Soon
             </p>
-          </div>
-          
-          <div className="max-w-4xl mx-auto">
-            {upcomingEvents.slice(0, 1).map((event) => (
-              <div key={event.id} className="glass rounded-xl overflow-hidden animate-fade-in">
-                <div className="relative h-96 cursor-pointer" onClick={() => setSelectedImage(event.image)}>
-                  <img
-                    src={event.image}
-                    alt={event.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                </div>
-                <div className="p-8">
-                  <h3 className="text-3xl font-bold mb-4">{event.title}</h3>
-                  <p className="text-white/70 text-lg mb-6">{event.description}</p>
-                  <div className="space-y-3">
-                    <div className="flex items-center text-lg text-white/80">
-                      <Calendar className="w-5 h-5 mr-3 text-dot-cyan" />
-                      {event.date}
-                    </div>
-                    <div className="flex items-center text-lg text-white/80">
-                      <Clock className="w-5 h-5 mr-3 text-dot-cyan" />
-                      {event.time}
-                    </div>
-                    <div className="flex items-center text-lg text-white/80">
-                      <MapPin className="w-5 h-5 mr-3 text-dot-cyan" />
-                      {event.location}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
 
