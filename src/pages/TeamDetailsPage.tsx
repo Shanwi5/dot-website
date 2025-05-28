@@ -22,11 +22,11 @@ const teamMembers: Record<string, TeamMember[]> = {
     { 
       id: 1, 
       name: 'Chinmayi P', 
-      role: 'Organizer Team Lead', 
+      role: 'Organizer ', 
       skills: ['Leadership', 'Event Planning', 'Team Management'],
-      image: '/chinmayi.jpg',
+      image: '/chinmya.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/chinmayi-p'
+        linkedin: 'https://www.linkedin.com/in/chinmayi-p-9624a6292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     },
     { 
@@ -34,9 +34,9 @@ const teamMembers: Record<string, TeamMember[]> = {
       name: 'Keerthana R', 
       role: 'Organizer', 
       skills: ['Event Coordination', 'Communication'],
-      image: '/keerthana.jpg',
+      image: '/keerthanar.jpeg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/keerthana-r'
+        linkedin: 'https://www.linkedin.com/in/keerthana-r-7b030130b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     },
     { 
@@ -46,7 +46,7 @@ const teamMembers: Record<string, TeamMember[]> = {
       skills: ['Event Management', 'Team Coordination'],
       image: '/lipika.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/lipika-bv'
+        linkedin: 'https://www.linkedin.com/in/lipika-b-v-92230230b'
       }
     },
     { 
@@ -56,7 +56,7 @@ const teamMembers: Record<string, TeamMember[]> = {
       skills: ['Event Planning', 'Logistics'],
       image: '/poorna.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/poorna-prajay'
+        linkedin: 'https://www.linkedin.com/in/poorna-prajay-s-a7630430b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     },
     { 
@@ -64,19 +64,29 @@ const teamMembers: Record<string, TeamMember[]> = {
       name: 'Sudhindra Shenoy', 
       role: 'Organizer', 
       skills: ['Event Coordination', 'Team Management'],
-      image: '/sudhindra.jpg',
+      image: '/sudhibdra.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/sudhindra-shenoy'
+        linkedin: 'https://www.linkedin.com/in/b-sudhindra-shenoy-697023295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     },
     { 
       id: 6, 
-      name: 'Sameeksha', 
+      name: 'Sameeksha M.R', 
       role: 'Organizer', 
       skills: ['Event Planning', 'Communication'],
       image: '/sameeksha.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/sameeksha'
+        linkedin: 'https://www.linkedin.com/in/sameeksha-mr-20105b340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+      }
+    },
+    { 
+      id: 7, 
+      name: 'Chinmayi Uppunda', 
+      role: 'Organizer', 
+      skills: ['Event Planning', 'Team Management'],
+      image: '/chinmayiu.jpg',
+      social: {
+        linkedin: 'https://www.linkedin.com/in/chinmayi-uppunda-a6004933a'
       }
     }
   ],
@@ -84,11 +94,12 @@ const teamMembers: Record<string, TeamMember[]> = {
     { 
       id: 1, 
       name: 'Kushi J Ramu', 
-      role: 'Graphics Design Lead', 
+      role: 'Graphics Designer', 
       skills: ['Graphic Design', 'Visual Communication', 'Branding'],
       image: '/kushi.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/kushi-j-ramu'
+        linkedin: 'https://www.linkedin.com/in/kushi-j-ramu-1bb759297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+
       }
     },
     { 
@@ -98,7 +109,7 @@ const teamMembers: Record<string, TeamMember[]> = {
       skills: ['Digital Design', 'Illustration'],
       image: '/sanjana.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/sanjana-r'
+        linkedin: 'https://www.linkedin.com/in/sanjana-r-015963305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     },
     { 
@@ -106,9 +117,9 @@ const teamMembers: Record<string, TeamMember[]> = {
       name: 'Keerthana K', 
       role: 'Graphics Designer', 
       skills: ['UI/UX Design', 'Visual Design'],
-      image: '/keerthana-k.jpg',
+      image: '/keerthana.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/keerthana-k'
+        linkedin: 'https://www.linkedin.com/in/keerthana-k-934213301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     },
     { 
@@ -116,9 +127,9 @@ const teamMembers: Record<string, TeamMember[]> = {
       name: 'Shreya M S', 
       role: 'Graphics Designer', 
       skills: ['Graphic Design', 'Digital Art'],
-      image: '/shreya.jpg',
+      image: '/shreya.jpeg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/shreya-m-s'
+        linkedin: 'https://www.linkedin.com/in/shreya-ms-22b65632a'
       }
     },
     { 
@@ -128,7 +139,7 @@ const teamMembers: Record<string, TeamMember[]> = {
       skills: ['Visual Design', 'Branding'],
       image: '/shashank.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/shashank'
+        linkedin: 'https://www.linkedin.com/in/shashank-shetty-94730430b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     },
     { 
@@ -136,21 +147,21 @@ const teamMembers: Record<string, TeamMember[]> = {
       name: 'Yashaa K N', 
       role: 'Graphics Designer', 
       skills: ['Digital Design', 'Illustration'],
-      image: '/yashaa.jpg',
+      image: '/yashas.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/yashaa-k-n'
+        linkedin: 'https://www.linkedin.com/in/yashas-k-n-643031366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     }
   ],
   'technical-team-lead': [
     { 
       id: 1, 
-      name: 'Harsha g', 
+      name: 'Harsha G', 
       role: 'Technical Developer', 
       skills: ['Software Development', 'Team Leadership', 'Architecture'],
       image: '/harsha.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/harsha-g'
+        linkedin: 'https://www.linkedin.com/in/harsha-g-0015262a3'
       }
     },
     { 
@@ -160,17 +171,18 @@ const teamMembers: Record<string, TeamMember[]> = {
       skills: ['Web Development', 'Backend Development'],
       image: '/saurabh.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/saurabh-kumar'
+        linkedin: 'https://www.linkedin.com/in/saurabh-kumar-454a6a329'
       }
     },
     { 
       id: 4, 
-      name: 'MOHIT', 
+      name: 'mohith K K', 
       role: 'Technical Developer', 
       skills: ['Software Development', 'Database Management'],
-      image: '/mohit.jpg',
+      image: '/mohith.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/mohit'
+        linkedin: 'https://www.linkedin.com/in/mohith95?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+
       }
     },
     {
@@ -178,9 +190,9 @@ const teamMembers: Record<string, TeamMember[]> = {
       name: 'Jiya Kavadiya',
       role: 'Technical Developer',
       skills: ['Development', 'Technical Leadership', 'Problem Solving'],
-      image: '/jiya.jpg',
+      image: '/Jiya.jpg',
       social: {
-        linkedin: '#'
+        linkedin: 'https://www.linkedin.com/in/jiya-kumari-n-931974331'
       }
     },
     { 
@@ -188,9 +200,9 @@ const teamMembers: Record<string, TeamMember[]> = {
       name: 'Shruti Kumari', 
       role: 'Technical Developer', 
       skills: ['Web Development', 'UI/UX'],
-      image: '/Shruti.jpg',
+      image: '/shruthi.jpeg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/shruti-kumari'
+        linkedin: 'https://www.linkedin.com/in/shruti-kumari-73ab82318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     }
   ],
@@ -198,11 +210,11 @@ const teamMembers: Record<string, TeamMember[]> = {
     { 
       id: 1, 
       name: 'Rashmi Singh', 
-      role: 'Outreach Lead', 
+      role: 'Outreach Coordinator', 
       skills: ['Community Engagement', 'Partnership Development'],
       image: '/rashmi.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/rashmi-singh'
+        linkedin: 'https://www.linkedin.com/in/rashmi-c-567085340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     },
     { 
@@ -210,9 +222,9 @@ const teamMembers: Record<string, TeamMember[]> = {
       name: 'Anusha CM', 
       role: 'Outreach Coordinator', 
       skills: ['Community Relations', 'Event Planning'],
-      image: '/anusha.jpg',
+      image: '/anusha.jpeg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/anusha-cm'
+        linkedin: 'https://www.linkedin.com/in/anusha-gowda-79a086340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     },
     { 
@@ -222,38 +234,37 @@ const teamMembers: Record<string, TeamMember[]> = {
       skills: ['Partnership Development', 'Communication'],
       image: '/arbaz.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/arbaz-khan'
+        linkedin: 'https://www.linkedin.com/in/arbaz-khan-b5181a331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     },
     { 
       id: 4, 
-      name: 'Maytri nagashree', 
+      name: 'Maytri nagashree N', 
       role: 'Outreach Coordinator', 
       skills: ['Community Engagement', 'Event Coordination'],
-      image: '/maytri.jpg',
+      image: '/mythri.jpg',
       social: {
-        linkedin:'https://www.linkedin.com/in/mythri-nagashree-5277b432a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
-
+        linkedin: 'https://www.linkedin.com/in/mythri-nagashree-5277b432a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     },
     { 
       id: 5, 
-      name: 'Bhavana', 
+      name: 'Bhavana M', 
       role: 'Outreach Coordinator', 
       skills: ['Community Relations', 'Partnership Building'],
-      image: '/bhavana.jpg',
+      image: '/bhavana.jpeg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/bhavana'
+        linkedin: 'https://www.linkedin.com/in/bhavana-m-4038b330a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     },
     { 
       id: 6, 
-      name: 'Yashashwini', 
+      name: 'Yashashwini K M', 
       role: 'Outreach Coordinator', 
       skills: ['Community Engagement', 'Event Planning'],
-      image: '/yashashwini.jpg',
+      image: '/yashaswini.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/yashashwini'
+        linkedin: 'https://www.linkedin.com/in/yashaswini-k-m-7876462a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     }
   ],
@@ -261,21 +272,21 @@ const teamMembers: Record<string, TeamMember[]> = {
     { 
       id: 1, 
       name: 'Spandana N', 
-      role: 'Social Media Marketing Lead', 
+      role: 'Social Media Manager', 
       skills: ['Social Media Strategy', 'Content Creation', 'Digital Marketing'],
       image: '/spandana.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/spandana-n'
+        linkedin: 'https://www.linkedin.com/in/spandana-n-spandana-n-979a4230a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     },
     { 
       id: 2, 
-      name: 'Hitaishi', 
+      name: 'Hithaishi M', 
       role: 'Social Media Manager', 
       skills: ['Content Strategy', 'Social Media Management'],
-      image: '/hitaishi.jpg',
+      image: '/Hithaishi.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/hitaishi'
+        linkedin: 'https://www.linkedin.com/in/hithaishi-m-68a721329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     },
     { 
@@ -283,7 +294,7 @@ const teamMembers: Record<string, TeamMember[]> = {
       name: 'Apoorva C', 
       role: 'Social Media Manager', 
       skills: ['Digital Marketing', 'Content Creation'],
-      image: '/apoorva.jpg',
+      image: '/apoorva.jpeg',
       social: {
         linkedin: 'https://www.linkedin.com/in/apoorva-c'
       }
@@ -293,29 +304,29 @@ const teamMembers: Record<string, TeamMember[]> = {
       name: 'Vaibhav Ghogale', 
       role: 'Social Media Manager', 
       skills: ['Social Media Strategy', 'Analytics'],
-      image: '/vaibhav.jpg',
+      image: '/vaibhav.jpeg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/vaibhav-ghogale'
+        linkedin: 'https://www.linkedin.com/in/vaibhav-vilasrao-ghogale-59348b313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     },
     { 
       id: 5, 
-      name: 'Prakruthi', 
+      name: 'Prakruthi Gowda BA', 
       role: 'Social Media Manager', 
       skills: ['Content Creation', 'Community Management'],
       image: '/prakruthi.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/prakruthi'
+        linkedin: 'https://www.linkedin.com/in/prakruthi-gowda-798663295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     },
     { 
       id: 6, 
-      name: 'Chanchal', 
+      name: 'Chanchal H Choudhary', 
       role: 'Social Media Manager', 
       skills: ['Social Media Marketing', 'Content Strategy'],
-      image: '/chanchal.jpg',
+      image: '/Chanchal.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/chanchal'
+        linkedin: 'https://www.linkedin.com/in/chanchal-choudhary-427292334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     }
   ]
@@ -357,14 +368,8 @@ const TeamDetailsPage: React.FC = () => {
       <Navbar />
       <div className="container mx-auto px-4 pt-32">
         <div className="text-center mb-16">
-          <Link 
-            to="/team" 
-            className="inline-block mb-8 text-dot-cyan hover:text-dot transition-colors"
-          >
-            ← Back to Teams
-          </Link>
           <h2 className="text-4xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-dot-cyan to-dot text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text font-extrabold drop-shadow-md">
               {displayTeamName}
             </span>
           </h2>
@@ -429,6 +434,16 @@ const TeamDetailsPage: React.FC = () => {
             </div>
           ))}
         </div>
+
+        <div className="text-center mt-16 mb-8">
+  <Link 
+    to="/team" 
+    className="inline-block text-2xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-600 to-purple-500 text-transparent bg-clip-text drop-shadow-md hover:from-blue-500 hover:via-purple-500 hover:to-purple-400 transition-all duration-300 hover:brightness-125"
+  >
+    ← Back to Teams
+  </Link>
+</div>
+
       </div>
       <Footer />
     </div>
