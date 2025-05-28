@@ -16,32 +16,13 @@ const Events: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   // Sample data - replace with actual data from your backend
-  const upcomingEvents: Event[] = [
-    {
-      id: 1,
-      title: "Web Development Workshop",
-      date: "March 15, 2024",
-      time: "2:00 PM - 5:00 PM",
-      location: "Room 301, Main Building",
-      image: "/images/events/web-dev-workshop.jpg",
-      description: "Learn the fundamentals of web development with hands-on projects."
-    },
-    {
-      id: 2,
-      title: "AI & Machine Learning Seminar",
-      date: "March 20, 2024",
-      time: "10:00 AM - 1:00 PM",
-      location: "Conference Hall",
-      image: "/images/events/ai-seminar.jpg",
-      description: "Explore the latest trends in AI and machine learning."
-    }
-  ];
+  const upcomingEvents: Event[] = [];
 
   const pastEvents: Event[] = [
     {
       id: 3,
       title: "Tech Day 2024",
-      date: "December 16, 2024",
+      date: "December 16, 2023",
       time: "9:00 AM - 4:30 PM",
       location: "MBA Smart Room",
       image: "/tech1.jpeg",
@@ -111,9 +92,22 @@ const Events: React.FC = () => {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               <span className="text-gradient">Upcoming Events</span>
             </h2>
-            <p className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gradient max-w-2xl mx-auto">
-              Coming Soon
-            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {upcomingEvents.map((event) => (
+              <EventCard key={event.id} event={event} />
+            ))}
+          </div>
+        </div>
+
+        {/* Coming Soon Card */}
+        <div className="mb-24">
+          <div className="w-full max-w-4xl mx-auto">
+            <div className="backdrop-blur-lg bg-white/30 border border-white/20 rounded-3xl shadow-2xl p-20 flex justify-center items-center h-64">
+              <h2 className="text-4xl sm:text-5xl font-semibold text-gray-800">
+                Coming Soon
+              </h2>
+            </div>
           </div>
         </div>
 
