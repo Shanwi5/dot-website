@@ -27,7 +27,7 @@ const clubHeads: TeamMember[] = [
     name: 'Shivam Kumar Verma',
     role: 'President',
     bio: 'Leading the vision and direction of D.O.T.',
-    image: '/shivam-kumar-verma.jpg',
+    image: '/shivam.jpeg',
     skills: [
       { name: 'Leadership', level: 95 },
       { name: 'Strategy', level: 90 },
