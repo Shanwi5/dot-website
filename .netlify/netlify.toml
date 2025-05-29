@@ -7,11 +7,16 @@ headers = []
 [functions."*"]
 
 [build]
-publish = "C:\\Users\\rpheo\\OneDrive\\Documents\\newdot[1]\\newdot\\dot-web-main\\dist"
-publishOrigin = "config"
-commandOrigin = "config"
-base = "C:\\Users\\rpheo\\OneDrive\\Documents\\newdot[1]\\newdot\\dot-web-main"
-command = "npm run build"
+command = "bun install && bun run build"
+publish = "dist"
+base = "dot-web-main"
+
+[build.cache]
+paths = [
+  "node_modules",
+  ".bun",
+  "bun.lockb"
+]
 
 [build.environment]
 
