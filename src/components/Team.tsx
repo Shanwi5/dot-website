@@ -126,7 +126,7 @@ const clubLeads: TeamMember[] = [
     name: 'Shanwi BM',
     role: 'Technical Team Lead',
     bio: 'Driving technical projects and development initiatives.',
-    image: '/shanwi.jpg',
+    image: '/shanwi.jpeg',
     skills: [
       { name: 'Development', level: 95 },
       { name: 'Architecture', level: 88 },
@@ -141,7 +141,7 @@ const clubLeads: TeamMember[] = [
     name: 'Disha Shetty',
     role: 'Outreach Team Lead',
     bio: 'Managing external relations and partnerships.',
-    image: '/disha.jpg',
+    image: '/disha.jpeg',
     skills: [
       { name: 'Networking', level: 90 },
       { name: 'Communication', level: 92 },
